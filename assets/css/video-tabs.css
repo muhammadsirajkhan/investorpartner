@@ -1,0 +1,85 @@
+.video-tabs-section {
+    background-color: #f8f9fa;
+}
+
+.video-tab-content {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-image 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.btn-play {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.btn-play:hover {
+    transform: scale(1.1);
+    background-color: #fff;
+}
+
+.btn-play i {
+    font-size: 24px;
+    color: #dc3545;
+}
+
+.video-tabs-nav {
+    gap: 15px;
+}
+
+.btn-tab {
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    background: none;
+    color: #6c757d;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-tab:hover,
+.btn-tab.active {
+    border-color: #dc3545;
+    color: #dc3545;
+}
+
+#videoModal .modal-content {
+    background-color: #000;
+}
+
+#videoModal .modal-header {
+    border: none;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+#videoModal .btn-close {
+    background-color: #fff;
+    opacity: 0.8;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+#videoModal .btn-close:hover {
+    opacity: 1;
+}
+
+#videoModal .modal-body {
+    background-color: #000;
+}

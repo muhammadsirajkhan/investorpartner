@@ -41,8 +41,8 @@
 					<?php wp_nav_menu(array('theme_location' => 'header_menu', 'menu_id' => 'header-nav')); ?>
 
 					<div class="btn-wrap">
-						<a href="tel:468786850" class="btn btn-secondary">Let’s Talk: 468 786 850</a>
-						<a href="#" class="btn btn-outline-primary">Book Free Consultation</a>
+						<a href="tel:468786850" class="btn btn-secondary rounded-pill">Let’s Talk: 468 786 850</a>
+						<a href="#" class="btn btn-outline-primary rounded-pill">Book Free Consultation</a>
 					</div>
 				</div>
 			</div>

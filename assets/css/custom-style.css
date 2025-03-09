@@ -38,8 +38,10 @@
     padding: 40px 0;
 }
 
-.client-item {
-    padding: 20px;
+.client-item iframe {
+    aspect-ratio: 16/9 !important;!i;!;
+    height: 100%;
+    width: 100%;
 }
 
 .client-name {
@@ -237,4 +239,82 @@
     .scroll-top {
         margin: 0 auto;
     }
+}
+
+
+.banner-content h1, .banner-content p {
+    color: #fff;
+}
+
+.banner-content p {font-size: 20px;line-height: 1.3;}
+
+.review-summary p {
+    font-size: 16px;
+}
+
+.review-summary p .rating::before {
+    content: '\f586 \f586 \f586 \f586 \f586';
+    font-family: bootstrap-icons!important;
+    color: #facb0f;
+    letter-spacing: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.review-summary p .rating {
+    font-size: 24px;
+    position: relative;
+    margin-right: 10px;
+}
+
+video.banner-video {
+    width: 438px;
+    height: 500px;
+    aspect-ratio: 438/500;
+    display: block;
+    border-radius: 18px;
+    margin-left: 60px;
+}
+
+.banner-media .video-wrapper {
+    text-align: center;
+}
+
+.review-box {
+    background-color: #fff;
+    border-radius: 18px;
+    padding: 15px;
+    max-width: 460px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 9;
+}
+
+.review-box .review-text {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+section.banner-section {
+    padding: 50px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.review-box .review-author::after {
+    content: '\f586 \f586 \f586 \f586 \f586';
+    font-family: bootstrap-icons !important;
+    color: #facb0f;
+    letter-spacing: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 0;
+    display: block;
+}
+
+.feature-grid img {
+    max-height: 90px;
+    max-width: 120px;
 }

@@ -9,13 +9,13 @@ get_header(); ?>
 <?php while (have_posts()) : the_post(); ?>
 <?php endwhile; ?>
 
-<section class="banner-section">
+<section class="banner-section" style="background-image: url(<?php echo get_template_directory_uri(  ); ?>/assets/img/banner.jpg);">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-lg-5">
                 <div class="banner-content">
-                    <h1 class="banner-title">Grow your Wealth through Property Investment Today!</h1>
-                    <p class="banner-text">Achieve your financial and lifestyle goals with our team of experts to help you grow your investment property portfolios.</p>
+                    <h1>Grow your Wealth through Property Investment Today!</h1>
+                    <p>Achieve your financial and lifestyle goals with our team of experts to help you grow your investment property portfolios.</p>
                     <a href="https://investorpartner.com.au/booking-form/" class="btn btn-primary rounded-pill">Claim Your Free Strategy Session</a>
                     <div class="review-summary mt-4">
                         <p><span class="rating">5/5</span> Avg. from 100+ Google & Facebook reviews.</p>
@@ -25,11 +25,11 @@ get_header(); ?>
             <div class="col-lg-6">
                 <div class="banner-media">
                     <div class="video-wrapper">
-                        <video autoplay muted loop playsinline preload="metadata">
+                        <video autoplay muted loop playsinline preload="metadata" class="banner-video">
                             <source src="<?php echo get_template_directory_uri(); ?>/assets/img/banner-video.mp4">
                         </video>
                     </div>
-                    <div class="review-box mt-4">
+                    <div class="review-box">
                         <div class="d-flex align-items-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home1.png" alt="Andrew Steel" class="review-avatar" width="60" height="60">
                             <div class="review-meta ms-3">
@@ -47,29 +47,29 @@ get_header(); ?>
 
 <section class="feature-section py-5">
     <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-lg-6 feature-logos">
-                <h2 class="feature-title mb-4">We have been featured in</h2>
+                <h2 class="feature-title mb-5">We have been featured in</h2>
                 <div class="feature-grid">
-                    <div class="row g-4">
-                        <div class="col-4"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/invest-1.png" class="img-fluid" alt="Investment Logo" loading="lazy"></div>
-                        <div class="col-4"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/abcnews-1.png" class="img-fluid" alt="ABC News Logo" loading="lazy"></div>
-                        <div class="col-4"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/invest2-1.png" class="img-fluid" alt="Investment Logo 2" loading="lazy"></div>
-                        <div class="col-4"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/7_news_logo.png" class="img-fluid" alt="7 News Logo" loading="lazy"></div>
-                        <div class="col-4"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Champions_2023_Blue_Finalist_Logo2.png" class="img-fluid" alt="Champions Logo" loading="lazy"></div>
-                        <div class="col-4"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pizza-Property.png" class="img-fluid" alt="Pizza Property Logo" loading="lazy"></div>
-                        <div class="col-4"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/FBC-Badge-Circle-Blue2.png" class="img-fluid" alt="FBC Badge Logo" loading="lazy"></div>
-                        <div class="col-4"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Forbes_logo2.png" class="img-fluid" alt="Forbes Logo" loading="lazy"></div>
-                        <div class="col-4"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/7ff26bf1-d1f1-4b23-a49e-d6db4721b62b.png" class="img-fluid" alt="Partner Logo" loading="lazy"></div>
-                        <div class="col-4"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/ad.png" class="img-fluid" alt="AFR Logo" loading="lazy"></div>
-                        <div class="col-4"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/3edd6ea5-661e-447b-9a10-c6c3821401f0.png" class="img-fluid" alt="Partner Logo 2" loading="lazy"></div>
-                        <div class="col-4"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/mebourne.jpeg" class="img-fluid" alt="Melbourne Logo" loading="lazy"></div>
+                    <div class="row g-4 align-items-center">
+                        <div class="col-4 text-center"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/invest-1.png" class="img-fluid" alt="Investment Logo" loading="lazy"></div>
+                        <div class="col-4 text-center"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/abcnews-1.png" class="img-fluid" alt="ABC News Logo" loading="lazy"></div>
+                        <div class="col-4 text-center"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/invest2-1.png" class="img-fluid" alt="Investment Logo 2" loading="lazy"></div>
+                        <div class="col-4 text-center"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/7_news_logo.png" class="img-fluid" alt="7 News Logo" loading="lazy"></div>
+                        <div class="col-4 text-center"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Champions_2023_Blue_Finalist_Logo2.png" class="img-fluid" alt="Champions Logo" loading="lazy"></div>
+                        <div class="col-4 text-center"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pizza-Property.png" class="img-fluid" alt="Pizza Property Logo" loading="lazy"></div>
+                        <div class="col-4 text-center"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/FBC-Badge-Circle-Blue2.png" class="img-fluid" alt="FBC Badge Logo" loading="lazy"></div>
+                        <div class="col-4 text-center"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Forbes_logo2.png" class="img-fluid" alt="Forbes Logo" loading="lazy"></div>
+                        <div class="col-4 text-center"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/7ff26bf1-d1f1-4b23-a49e-d6db4721b62b.png" class="img-fluid" alt="Partner Logo" loading="lazy"></div>
+                        <div class="col-4 text-center"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/ad.png" class="img-fluid" alt="AFR Logo" loading="lazy"></div>
+                        <div class="col-4 text-center"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/3edd6ea5-661e-447b-9a10-c6c3821401f0.png" class="img-fluid" alt="Partner Logo 2" loading="lazy"></div>
+                        <div class="col-4 text-center"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/mebourne.jpeg" class="img-fluid" alt="Melbourne Logo" loading="lazy"></div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 feature-video">
                 <div class="ratio ratio-16x9">
-                    <iframe loading="lazy" src="https://www.youtube.com/embed/-cNj8my-nY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe loading="lazy" src="https://www.youtube.com/embed/-cNj8my-nY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="rounded-4" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -91,8 +91,8 @@ get_header(); ?>
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="about-image">
-                    <img loading="lazy" class="img-fluid" src="https://investorpartner.com.au/wp-content/uploads/2023/02/WhatsApp-Image-2023-02-19-at-10.56.25-PM.jpeg" alt="Property Investment">
+                <div class="about-image text-lg-end text-center">
+                    <img loading="lazy" class="img-fluid rounded-4" src="https://investorpartner.com.au/wp-content/uploads/2023/02/WhatsApp-Image-2023-02-19-at-10.56.25-PM.jpeg" alt="Property Investment">
                 </div>
             </div>
         </div>
@@ -105,7 +105,7 @@ get_header(); ?>
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="property-goals-image">
-                    <img loading="lazy" width="500" height="677" src="https://investorpartner.com.au/wp-content/uploads/2023/02/Website-images-2.jpg" class="img-fluid" alt="Property Investment">
+                    <img loading="lazy" src="https://investorpartner.com.au/wp-content/uploads/2023/02/Website-images-2.jpg" class="img-fluid rounded-4" alt="Property Investment">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -137,54 +137,64 @@ get_header(); ?>
                 <div class="mb-4">
                     <a href="https://investorpartner.com.au/booking-form/" class="btn btn-primary rounded-pill">Claim Your Free Strategy Review</a>
                 </div>
-                <div class="review-box bg-light p-4 rounded">
+                <div class="review-box mt-0 bg-light p-4 rounded-4 shadow-sm">
                     <div class="d-flex align-items-center mb-3">
-                        <img loading="lazy" decoding="async" width="60" height="60" src="https://investorpartner.com.au/wp-content/uploads/2023/02/Alex-Parker.png" class="rounded-circle me-3" alt="Alex Parker">
+                        <img loading="lazy" src="<?php echo get_template_directory_uri(  ); ?>/assets/img/p.png" class="rounded-circle me-3" alt="Alex Parker">
                         <div>
                             <h3 class="h5 mb-1">Alex Parker</h3>
                             <p class="text-muted small mb-0">2 years ago</p>
                         </div>
                     </div>
-                    <p class="mb-0">The team at investor partner introduced me to the property development world. They explained in a lot of detail the profitability, cashflow required and even the risks involved. They partnered with me in my developement and provided an end to end experience from finding the right property to getting it through council and ultimately building it. I have enjoyed the process and ofcourse the profits. Great bunch of people, super honest and transparent. Have already referred them to quite a few of my colleagues.</p>
+                    <p class="mb-0 small">The team at investor partner introduced me to the property development world. They explained in a lot of detail the profitability, cashflow required and even the risks involved. They partnered with me in my developement and provided an end to end experience from finding the right property to getting it through council and ultimately building it. I have enjoyed the process and ofcourse the profits. Great bunch of people, super honest and transparent. Have already referred them to quite a few of my colleagues.</p>
                 </div>
             </div>
             <div class="col-lg-2"></div>
             <div class="col-lg-5" data-aos="fade-right">
                 <div class="features-list">
                     <div class="feature-item mb-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <img loading="lazy" decoding="async" width="70" height="70" src="https://investorpartner.com.au/wp-content/uploads/2022/11/.png" class="me-3" alt="">
-                            <h4 class="h5 mb-0">Your Trusted Partner for Real Estate Success</h4>
+                        <div class="d-flex mb-3">
+                            <img loading="lazy" decoding="async" width="70" height="70" src="<?php echo get_template_directory_uri(  ); ?>/assets/img/1.png" class="me-3" alt="">
+                            <div class="content">
+                                <h4 class="h5">Your Trusted Partner for Real Estate Success</h4>
+                                <p>At IPG, we are astute investors, developers, land splitters, flippers, subdivision specialist, tax and business structures expert ourselves. Thus, we are placing money where the mouth is. We share our own user stories and share already delivered feasibilities to provide end to end advice – Specific to your situation 100% free.</p>
+                            </div>
                         </div>
-                        <p>At IPG, we are astute investors, developers, land splitters, flippers, subdivision specialist, tax and business structures expert ourselves. Thus, we are placing money where the mouth is. We share our own user stories and share already delivered feasibilities to provide end to end advice – Specific to your situation 100% free.</p>
                     </div>
                     <div class="feature-item mb-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <img loading="lazy" decoding="async" width="70" height="70" src="https://investorpartner.com.au/wp-content/uploads/2022/11/2.png" class="me-3" alt="">
-                            <h4 class="h5 mb-0">Connecting You to Top Industry Professionals</h4>
+                        <div class="d-flex mb-3">
+                            <img loading="lazy" decoding="async" width="70" height="70" src="<?php echo get_template_directory_uri(  ); ?>/assets/img/2.png" class="me-3" alt="">
+                            <div class="content">
+                                <h4 class="h5">Connecting You to Top Industry Professionals</h4>
+                                <p>Our vast network includes agents, architects, conveyancers, town planners, designers, tax agents, brokers, building inspectors, other developers, project management personnel. Our Agency is based on long term relationships and professional negotiations creating and thus we ensure we can leverage these to access rare off-market opportunities all across Australia.</p>
+                            </div>
                         </div>
-                        <p>Our vast network includes agents, architects, conveyancers, town planners, designers, tax agents, brokers, building inspectors, other developers, project management personnel. Our Agency is based on long term relationships and professional negotiations creating and thus we ensure we can leverage these to access rare off-market opportunities all across Australia.</p>
                     </div>
                     <div class="feature-item mb-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <img loading="lazy" decoding="async" width="70" height="70" src="https://investorpartner.com.au/wp-content/uploads/2022/11/3.png" class="me-3" alt="">
-                            <h4 class="h5 mb-0">Transparency You Can Trust in Every Deal</h4>
+                        <div class="d-flex mb-3">
+                            <img loading="lazy" decoding="async" width="70" height="70" src="<?php echo get_template_directory_uri(  ); ?>/assets/img/3.png" class="me-3" alt="">
+                            <div class="content">
+                                <h4 class="h5">Transparency You Can Trust in Every Deal</h4>
+                                <p>Unlike other Buyer's Agents who accept 'secret' commissions and kickbacks that may cloud their advice, we are truly independent, and our process is fully transparent.</p>
+                            </div>
                         </div>
-                        <p>Unlike other Buyer's Agents who accept 'secret' commissions and kickbacks that may cloud their advice, we are truly independent, and our process is fully transparent.</p>
                     </div>
                     <div class="feature-item mb-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <img loading="lazy" decoding="async" width="70" height="70" src="https://investorpartner.com.au/wp-content/uploads/2022/11/4.png" class="me-3" alt="">
-                            <h4 class="h5 mb-0">Experience-Driven Proposals for Immediate Equity Growth</h4>
+                        <div class="d-flex mb-3">
+                            <img loading="lazy" decoding="async" width="70" height="70" src="<?php echo get_template_directory_uri(  ); ?>/assets/img/4.png" class="me-3" alt="">
+                            <div class="content">
+                                <h4 class="h5">Experience-Driven Proposals for Immediate Equity Growth</h4>
+                                <p>With our experience, we stand behind the data and present opportunities where the equity can be unlocked TODAY. All our proposals are based on market research and detailed feasibilities which means we are not gambling on FUTURE growth as that is a given.</p>
+                            </div>
                         </div>
-                        <p>With our experience, we stand behind the data and present opportunities where the equity can be unlocked TODAY. All our proposals are based on market research and detailed feasibilities which means we are not gambling on FUTURE growth as that is a given.</p>
                     </div>
                     <div class="feature-item">
-                        <div class="d-flex align-items-center mb-3">
-                            <img loading="lazy" decoding="async" width="70" height="70" src="https://investorpartner.com.au/wp-content/uploads/2022/11/5.png" class="me-3" alt="">
-                            <h4 class="h5 mb-0">Inclusive Property Services with Rental Guarantees</h4>
+                        <div class="d-flex mb-3">
+                            <img loading="lazy" decoding="async" width="70" height="70" src="<?php echo get_template_directory_uri(  ); ?>/assets/img/5.png" class="me-3" alt="">
+                            <div class="content">
+                                <h4 class="h5">Inclusive Property Services with Rental Guarantees</h4>
+                                <p>Oversee logistics including building and pest inspections, legal, finance and tax advice. Best of all, we provide rental guarantees across all established properties. For our astute investors, we also offer project management, renovations, construction and development management across various States of Australia.</p>
+                            </div>
                         </div>
-                        <p class="mb-0">Oversee logistics including building and pest inspections, legal, finance and tax advice. Best of all, we provide rental guarantees across all established properties. For our astute investors, we also offer project management, renovations, construction and development management across various States of Australia.</p>
                     </div>
                 </div>
             </div>
@@ -205,45 +215,45 @@ get_header(); ?>
             <div class="swiper client-testimonials">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="client-item text-center">
-                            <iframe loading="lazy" src="https://www.youtube.com/embed/PaQIuF3n7s4" frameborder="0" allowfullscreen></iframe>
-                            <h4 class="client-name mb-3">Jun&Ebie</h4>
+                        <div class="client-item rounded-4 overflow-hidden shadow-sm text-center">
+                            <iframe loading="lazy" src="https://www.youtube.com/embed/PaQIuF3n7s4" frameborder="0" class="" allowfullscreen></iframe>
+                            <h4 class="client-name mb-3 mt-2">Jun&Ebie</h4>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="client-item text-center">
-                            <iframe loading="lazy" src="https://www.youtube.com/embed/8ZPLTUGF6N0" frameborder="0" allowfullscreen></iframe>
-                            <h4 class="client-name mb-3">Sarah</h4>
+                        <div class="client-item rounded-4 overflow-hidden shadow-sm text-center">
+                            <iframe loading="lazy" src="https://www.youtube.com/embed/8ZPLTUGF6N0" frameborder="0" class="" allowfullscreen></iframe>
+                            <h4 class="client-name mb-3 mt-2">Sarah</h4>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="client-item text-center">
-                            <iframe loading="lazy" src="https://www.youtube.com/embed/504XFsqMU0g" frameborder="0" allowfullscreen></iframe>
-                            <h4 class="client-name mb-3">Robert Moses</h4>
+                        <div class="client-item rounded-4 overflow-hidden shadow-sm text-center">
+                            <iframe loading="lazy" src="https://www.youtube.com/embed/504XFsqMU0g" frameborder="0" class="" allowfullscreen></iframe>
+                            <h4 class="client-name mb-3 mt-2">Robert Moses</h4>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="client-item text-center">
-                            <iframe loading="lazy" src="https://www.youtube.com/embed/6MLL9sYY3lM" frameborder="0" allowfullscreen></iframe>
-                            <h4 class="client-name mb-3">Moyes</h4>
+                        <div class="client-item rounded-4 overflow-hidden shadow-sm text-center">
+                            <iframe loading="lazy" src="https://www.youtube.com/embed/6MLL9sYY3lM" frameborder="0" class="" allowfullscreen></iframe>
+                            <h4 class="client-name mb-3 mt-2">Moyes</h4>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="client-item text-center">
-                            <iframe loading="lazy" src="https://www.youtube.com/embed/Uxo79-UD27U" frameborder="0" allowfullscreen></iframe>
-                            <h4 class="client-name mb-3">Catherien</h4>
+                        <div class="client-item rounded-4 overflow-hidden shadow-sm text-center">
+                            <iframe loading="lazy" src="https://www.youtube.com/embed/Uxo79-UD27U" frameborder="0" class="" allowfullscreen></iframe>
+                            <h4 class="client-name mb-3 mt-2">Catherien</h4>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="client-item text-center">
-                            <iframe loading="lazy" src="https://www.youtube.com/embed/MPI7QcLNbFE" frameborder="0" allowfullscreen></iframe>
-                            <h4 class="client-name mb-3">Peterchen</h4>
+                        <div class="client-item rounded-4 overflow-hidden shadow-sm text-center">
+                            <iframe loading="lazy" src="https://www.youtube.com/embed/MPI7QcLNbFE" frameborder="0" class="" allowfullscreen></iframe>
+                            <h4 class="client-name mb-3 mt-2">Peterchen</h4>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next client-item-next"></div>
+            <div class="swiper-button-prev client-item-prev"></div>
         </div>
     </div>
     </div>

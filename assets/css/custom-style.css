@@ -19,9 +19,6 @@
     background-color: #f8f9fa;
 }
 
-.client-title {
-}
-
 .client-subtitle {
     font-size: 1.8rem;
     color: #666;
@@ -39,7 +36,7 @@
 }
 
 .client-item iframe {
-    aspect-ratio: 16/9 !important;!i;!;
+    aspect-ratio: 16/9 !important;
     height: 100%;
     width: 100%;
 }

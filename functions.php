@@ -70,8 +70,11 @@ function register_custom_nav_menus() {
 
 
 
+if( function_exists('acf_add_options_page') ) {
 
+  acf_add_options_page();
 
+}
 
 
 

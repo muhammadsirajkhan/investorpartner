@@ -1,10 +1,10 @@
-<?php
-
-$footer_about = get_theme_mod('footer_about');
-$phone_number = get_theme_mod('phone_number');
-$email = get_theme_mod('email');
-$address = get_theme_mod('address');
-$copyright = get_theme_mod('copyright');
+<?php 
+$footer_logo = get_field('footer_logo', 'option'); 
+$footer_content = get_field('footer_content', 'option'); 
+$social = get_field('social', 'option'); 
+$phone = get_field('phone', 'option'); 
+$email = get_field('email', 'option'); 
+$copyright = get_field('copyright', 'option'); 
 
 ?>
 
@@ -15,9 +15,9 @@ $copyright = get_theme_mod('copyright');
         <!-- About Column -->
         <div class="col-sm-12 col-lg-3 col-md-6 footer-about mb-4 mb-lg-0">
           <a href="https://investorpartner.com.au" class="footer-logo d-block mb-3">
-            <img decoding="async" src="https://investorpartner.com.au/wp-content/uploads/2021/01/footer-logo-min.png" alt="Footer Logo" class="img-fluid">
+            <img decoding="async" src="<?php echo $footer_logo ?? ''; ?>" alt="Footer Logo" class="img-fluid">
           </a>
-          <p class="footer-vision">Our vision is to inspire a journey from extremely ordinary to extra ordinary</p>
+          <p class="footer-vision"><?php echo $footer_content ?? ''; ?></p>
         </div>
 
         <!-- Quick Links Column -->
@@ -47,24 +47,35 @@ $copyright = get_theme_mod('copyright');
           <h3 class="footer-title mb-3">Reach Us</h3>
           <div class="footer-social mb-4">
             <div class="social-icons d-flex gap-3">
-              <a href="https://www.facebook.com/InvestorPartnerGroup" class="social-link" target="_blank"><i class="bi bi-facebook"></i></a>
+              <?php 
+                  if($social) :
+                      foreach($social as $item) :
+              ?>
+                <a href="<?php echo $item['link'] ?? ''; ?>" class="social-link" target="_blank"><i class="<?php echo $item['icon'] ?? ''; ?>"></i></a>
+              <?php 
+                  endforeach;
+              endif;
+              ?>
+
+
+              <!-- <a href="https://www.facebook.com/InvestorPartnerGroup" class="social-link" target="_blank"><i class="bi bi-facebook"></i></a>
               <a href="https://www.linkedin.com/company/77080688" class="social-link" target="_blank"><i class="bi bi-linkedin"></i></a>
               <a href="https://www.instagram.com/helpmebuyau/" class="social-link" target="_blank"><i class="bi bi-instagram"></i></a>
               <a href="https://www.tiktok.com/@helpmebuyau?lang=en" class="social-link" target="_blank"><i class="bi bi-tiktok"></i></a>
-              <a href="https://www.youtube.com/@moxinreza" class="social-link" target="_blank"><i class="bi bi-youtube"></i></a>
+              <a href="https://www.youtube.com/@moxinreza" class="social-link" target="_blank"><i class="bi bi-youtube"></i></a> -->
             </div>
           </div>
           <ul class="list-unstyled contact-info">
             <li class="mb-3">
-              <a href="tel:468 786 850" class="contact-link d-flex align-items-center gap-2">
+              <a href="tel:<?php echo isset($phone) ? str_replace(' ', '', $phone) : ''; ?>" class="contact-link d-flex align-items-center gap-2">
                 <i class="bi bi-telephone"></i>
-                <span>468 786 850</span>
+                <span><?php echo $phone ?? ''; ?></span>
               </a>
             </li>
             <li class="mb-3">
-              <a href="mailto:info@helpmebuy.com.au" class="contact-link d-flex align-items-center gap-2">
+              <a href="mailto:<?php echo $email ?? ''; ?>" class="contact-link d-flex align-items-center gap-2">
                 <i class="bi bi-envelope"></i>
-                <span>info@helpmebuy.com.au</span>
+                <span><?php echo $email ?? ''; ?></span>
               </a>
             </li>
           </ul>
@@ -75,7 +86,7 @@ $copyright = get_theme_mod('copyright');
     <div class="footer-bottom">
       <div class="row align-items-center">
         <div class="col-lg-6 mb-3 mb-md-0">
-          <div class="copyright text-lg-start text-center">Copyright © 2025 - Investor Partner Group. All right reserved</div>
+          <div class="copyright text-lg-start text-center"><?php echo $copyright ?? ''; ?></div>
         </div>
         <div class="col-md-6 text-md-end">
           <div class="d-flex justify-content-md-end align-items-center gap-3">

@@ -13,11 +13,19 @@
 
 <?php wp_head(); ?>
 
+
+<?php 
+$header_logo = get_field('header_logo', 'option'); 
+$header_link_one = get_field('header_link_one', 'option'); 
+$header_link_two = get_field('header_link_two', 'option'); 
+
+?>
+
 <body <?php body_class(); ?>>
 	<header>
 		<nav class="navbar navbar-expand-lg" aria-label="Eighth navbar example">
 			<div class="container">
-				<a class="navbar-brand" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt=""></a>
+				<a class="navbar-brand" href="#"><img src="<?php echo $header_logo ?? ''; ?>" alt=""></a>
 				<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -49,9 +57,9 @@
 						'container' => false
 					)); ?>
 
-					<div class="btn-wrap">
-						<a href="tel:468786850" class="btn btn-secondary rounded-pill">Let’s Talk: 468 786 850</a>
-						<a href="#" class="btn btn-outline-primary rounded-pill">Book Free Consultation</a>
+					<div class="btn-wrap d-flex gap-2">
+						<a href="<?php echo $header_link_one['url'] ?? ''; ?>" class="btn btn-secondary rounded-pill"><?php echo $header_link_one['title'] ?? ''; ?></a>
+						<a href="<?php echo $header_link_two['title'] ?? ''; ?>" class="btn btn-outline-primary rounded-pill"><?php echo $header_link_two['title'] ?? ''; ?></a>
 					</div>
 				</div>
 			</div>
